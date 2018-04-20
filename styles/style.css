@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(168, 116, 216);
+}
+header {
+    height: 40%;
+    background-color: rgb(81, 202, 202);
+    opacity: .7;
+}
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+header li {
+    display: block;
+    list-style-type: none;
+}
+
+.pelota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.usuario {
+    height: 3rem;
+    margin-top: auto;
+}
+
+.canchas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.canchas div{
+    height: 10rem;
+    width: 33%;
+    background-color: rgb(85, 156, 132);
+    opacity: .7;
+    margin-bottom: 10px;
+    margin-top: 10%;
+}
