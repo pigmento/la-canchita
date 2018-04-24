@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -41,13 +43,159 @@ header li {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%;
 }
 
-.canchas div{
-    height: 10rem;
+.canchasItems > a {
+    width: 32%;
+    margin: 5px;
+}
+
+.canchasItems > img {
+    width: 100%;
+}
+
+.canchasItems > figcaption {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.linkCancha {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+
+.fotoCancha {
+    margin-top: 3rem;
+    width: 90%;
+}
+
+.fotoCancha > img {
+    width: 100%;
+}
+
+.datosReservas {
+    width: 70%;
+}
+
+.listaHorarios {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+
+.horarios {
+    width: 100%;
+    padding: 1rem;
+}
+
+.columnaIzq {
+    width: 40%;
+    float: left;
+    height: 100vh;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.columnaDer {
+    width: 60%;
+    float: left;
+    height: 100vh;
+}
+
+.horarios > table {
+    background-color: #ccc;
+    margin: 2rem auto;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+.horarios > table > tbody > tr {
+    height: 2.3rem;
+    border-bottom: 1px solid #aaa;
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+}
+
+.horarios > label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 2rem 1.5rem 0 5rem;
+    line-height: 2rem;
+}
+
+.horarios > input[type="date"] {
+    height: 2rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.libre {
+    background-color: #ccc;
+}
+
+.ocupado {
+    background-color: red;
+}
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(125,125,125,0.85);
+    position: absolute;
+    top:0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal > form {
     width: 33%;
-    background-color: rgb(85, 156, 132);
-    opacity: .7;
-    margin-bottom: 10px;
-    margin-top: 10%;
+    height: 33%;
+    background-color: red;
+    padding: 1rem;
+}
+
+.modal > form > input[type="text"] {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1rem;
+    height: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.modal > form > input[type="submit"] {
+    position: relative;
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 40px;
+}
+
+.modalOculto {
+    display: none;
+}
+
+.modalVisible {
+    display: initial;
 }

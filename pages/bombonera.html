@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>La Canchita</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>
+                <h2><a href="">CANCHAS</a></h2>
+            </li>
+            <li>
+                <h2><a href="">CONTACTO</a></h2>
+            </li>
+            <li>
+                <h2><a href="">USUARIO</a></h2>
+            </li>
+            <img class="usuario" src="https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fopenclipart.org%2Fdownload%2F247316%2Fabstract-user-flat-2.svg&f=1" alt="Usuario">
+        </ul>
+    </header>
+    <div class="container">
+        <div class="columnaIzq">
+            <h1>Bombonera</h1>
+            <figure class="fotoCancha">
+                <img src="./../images/bombonera.jpg" alt="monumental">
+            </figure>
+        </div>
+        <div class="columnaDer">
+            <section class="horarios">
+                <label for="date">Fecha</label>
+                <input type="date" name=date value="2018-04-24">
+                <table>
+                    <tr>
+                        <th>Horario</th>
+                    </tr>
+                    <tr class="libre"><td>12 a 13</td></tr>
+                    <tr class="libre"><td>13 a 14</td></tr>
+                    <tr class="libre"><td>14 a 15</td></tr>
+                    <tr class="libre"><td>15 a 16</td></tr>
+                    <tr class="libre"><td>16 a 17</td></tr>
+                    <tr class="libre"><td>17 a 18</td></tr>
+                    <tr class="libre"><td>18 a 19</td></tr>
+                    <tr class="ocupado"><td>19 a 20</td></tr>
+                    <tr class="libre"><td>20 a 21</td></tr>
+                    <tr class="ocupado"><td>21 a 22</td></tr>
+                    <tr class="ocupado"><td>22 a 23</td></tr>
+                    <tr class="ocupado"><td>23 a 00</td></tr>
+                </table>
+            </section>
+        </div>
+        <div class="modal modalOculto" id="modal">
+            <form action="">
+                <input type="text" placeholder="Nombre Contacto">
+                <input type="text" placeholder="Telefono Contacto">
+                <p>Fecha: 24/04/2018</p>
+                <p>Horario: 20 a 21 hs</p>
+                <input type="submit" value="Reservar">
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
